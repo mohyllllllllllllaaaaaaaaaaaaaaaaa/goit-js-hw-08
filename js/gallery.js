@@ -90,12 +90,12 @@ const images = [
     openModal(largeImage);
   });
   function openModal (imageURL) {
-    const instnce = basicLightbox.create(`<img src="${imageURL}" width="800" height="600">`);
-    instnce.show();
+    const instance = basicLightbox.create(`<img src="${imageURL}" width="800" height="600">`);
+    instance.show();
 
     document.addEventListener ('keydown', (event) => {
         if(event.key ==='Escape') {
-            instnce.close();
+            instance.close();
         }
     });
   }
